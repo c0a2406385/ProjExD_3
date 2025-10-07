@@ -144,7 +144,7 @@ class Score:
     スコア表示に関するクラス
     """
     def __init__(self):
-        self.fonto = pg.font.SysFont("hgp創英角ﾎﾟｯﾌﾟ体", 30)
+        self.fonto = pg.font.SysFont("hgp創英角ﾎﾟｯﾌﾟ体", 30) #ex1/japanese_font.pyの14行目を参照
         self.color = (0, 0, 255)
         self.score = 0
         self.img = self.fonto.render(f"スコア: {self.score}", 0, self.color)
