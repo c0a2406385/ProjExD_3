@@ -202,6 +202,9 @@ def main():
 
         for bomb in bombs:
             if bomb is not None and bird.rct.colliderect(bomb.rct):
+                fonto = pg.font.Font(None, 80)
+                txt = fonto.render("Game Over", True, (255, 0, 0))
+                screen.blit(txt, [WIDTH//2-150, HEIGHT//2])
                 bird.change_img(8, screen)
                 pg.display.update()
                 time.sleep(1)
